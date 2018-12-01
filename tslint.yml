@@ -1,0 +1,22 @@
+rulesDirectory:
+  - tslint-plugin-prettier
+extends:
+  - tslint:recommended
+  - tslint-config-prettier
+rules:
+  prettier:
+    - true
+  member-access: false
+  ordered-imports: 
+    - true
+    - import-sources-order: lowercase-last
+      named-imports-order": lowercase-first
+  object-literal-sort-keys : false
+  interface-over-type-literal: false
+  no-console: false
+  no-unused-expression: false
+  no-shadowed-variable: false
+linterOptions:
+  exclude:
+    - dist
+        
